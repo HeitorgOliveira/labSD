@@ -1,0 +1,12 @@
+|storage_elements
+D => flip_flop_c_Q.DATAIN
+D => flip_flop_b_Q.DATAIN
+D => latch_Q.DATAIN
+Clock => flip_flop_b_Q.CLK
+Clock => latch_Q.LATCH_ENABLE
+Clock => flip_flop_c_Q.CLK
+Qa << latch_Q.DB_MAX_OUTPUT_PORT_TYPE
+Qb << flip_flop_b_Q.DB_MAX_OUTPUT_PORT_TYPE
+Qc << flip_flop_c_Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

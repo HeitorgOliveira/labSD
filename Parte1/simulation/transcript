@@ -1,0 +1,74 @@
+# Compile of aula02.vhd was successful.
+# Compile of aula02.vhd was successful.
+vsim -gui work.aula02
+# vsim -gui work.aula02 
+# Start time: 15:39:11 on Aug 20,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.aula02(structural)
+add wave -position insertpoint sim:/aula02/*
+force -freeze sim:/aula02/Clk 0 0
+force -freeze sim:/aula02/Clk 1 0
+force -freeze sim:/aula02/R 1 0
+force -freeze sim:/aula02/S 0 0
+run
+# WARNING: No extended dataflow license exists
+force -freeze sim:/aula02/R 0 0
+force -freeze sim:/aula02/Clk 0 0
+run
+force -freeze sim:/aula02/Clk 1 0
+run
+force -freeze sim:/aula02/S 1 0
+run
+force -freeze sim:/aula02/S 1 0
+force -freeze sim:/aula02/Clk 0 0
+force -freeze sim:/aula02/Clk 0 0
+force -freeze sim:/aula02/S 0 0
+run
+force -freeze sim:/aula02/S 1 0
+force -freeze sim:/aula02/S 0 0
+run
+force -freeze sim:/aula02/R 1 0
+run
+add wave -position insertpoint sim:/aula02/*
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Load canceled
+restart
+force -freeze sim:/aula02/Clk 1 0
+force -freeze sim:/aula02/R 1 0
+force -freeze sim:/aula02/S 0 0
+run
+force -freeze sim:/aula02/Clk 0 0
+force -freeze sim:/aula02/R 0 0
+run
+force -freeze sim:/aula02/Clk 1 0
+run
+force -freeze sim:/aula02/Clk 0 0
+force -freeze sim:/aula02/S 1 0
+run
+force -freeze sim:/aula02/Clk 1 0
+run
+force -freeze sim:/aula02/Clk 0 0
+force -freeze sim:/aula02/S 0 0
+run
+force -freeze sim:/aula02/Clk 1 0
+run
+force -freeze sim:/aula02/Clk 0 0
+force -freeze sim:/aula02/R 1 0
+run
+force -freeze sim:/aula02/Clk 1 0
+run
+force -freeze sim:/aula02/Clk 0 0
+force -freeze sim:/aula02/R 0 0
+run
+force -freeze sim:/aula02/Clk 1 0
+run
+force -freeze sim:/aula02/Clk 0 0
+run
+# End time: 15:52:53 on Aug 20,2024, Elapsed time: 0:13:42
+# Errors: 1, Warnings: 1

@@ -1,0 +1,33 @@
+# Compile of storage_elements.vhd was successful.
+vsim work.storage_elements
+# vsim work.storage_elements 
+# Start time: 13:46:53 on Aug 27,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.storage_elements(behavioral)
+wave create -driver freeze -pattern counter -startvalue 0 -endvalue 1 -type Range -direction Up -period 150ps -step 1 -repeat forever -starttime 0ps -endtime 1000ps sim:/storage_elements/D
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern counter -startvalue 0 -endvalue 1 -type Range -direction Up -period 50ps -step 1 -repeat forever -starttime 0ps -endtime 1000ps sim:/storage_elements/Clock
+add wave -position end  sim:/storage_elements/Qa
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 15678578  Hostname: 6-305-17  ProcessID: 11480
+#           Attempting to use alternate WLF file "./wlftgi1942".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftgi1942
+add wave -position end  sim:/storage_elements/Qb
+add wave -position end  sim:/storage_elements/Qc
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

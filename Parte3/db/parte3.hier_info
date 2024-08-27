@@ -1,0 +1,23 @@
+|parte3
+D => Parte2:MasterLatch.D
+CLK => Parte2:SlaveLatch.Clk
+CLK => Parte2:MasterLatch.Clk
+Q <= Parte2:SlaveLatch.Q
+
+
+|parte3|Parte2:MasterLatch
+Clk => R_g.IN1
+Clk => S_g.IN1
+D => S.DATAIN
+D => R.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte3|Parte2:SlaveLatch
+Clk => R_g.IN1
+Clk => S_g.IN1
+D => S.DATAIN
+D => R.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

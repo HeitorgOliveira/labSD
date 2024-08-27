@@ -1,0 +1,72 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity tb_storage_elements is
+end entity tb_storage_elements;
+
+architecture behavior of tb_storage_elements is
+    signal D     : std_logic := '0';
+    signal Clock : std_logic := '0';
+    signal G     : std_logic := '0';
+    signal Qa    : std_logic;
+    signal Qb    : std_logic;
+    signal Qc    : std_logic;
+
+    -- Component Declaration
+    component storage_elements
+        port (
+            D     : in  std_logic;
+            Clock : in  std_logic;
+            G     : in  std_logic;
+            Qa    : out std_logic;
+            Qb    : out std_logic;
+            Qc    : out std_logic
+        );
+    end component;
+
+begin
+    uut: storage_elements
+        port map (
+            D     => D,
+            Clock => Clock,
+            G     => G,
+            Qa    => Qa,
+            Qb    => Qb,
+            Qc    => Qc
+        );
+
+    -- Clock Generation
+    clk_gen: process
+    begin
+        Clock <= '0';
+        wait for 10 ns;
+        Clock <= '1';
+        wait for 10 ns;
+    end process;
+
+    -- Stimulus Process
+    stimulus: process
+    begin
+        -- Test case 1
+        D <= '1';
+        G <= '1';
+        wait for 20 ns;
+        G <= '0';
+        wait for 20 ns;
+
+        -- Test case 2
+        D <= '0';
+        G <= '1';
+        wait for 20 ns;
+        G <= '0';
+        wait for 20 ns;
+
+        -- Test case 3
+        D <= '1';
+        G <= '1';
+        wait for 20 ns;
+        G <= '0';
+        wait;
+    end process;
+
+end architecture behavior;
